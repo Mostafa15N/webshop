@@ -1,0 +1,197 @@
+.product{
+    width: 110rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.product__product{
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.product__img{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product__fotslider{
+    width: 100%;
+    height: 35rem;
+    position: relative;
+}
+
+.foto__arrow:first-child{
+    left: 0rem;
+}
+.foto__arrow:last-child{
+    right: 0rem;
+}
+
+.product__imgslider{
+    height: 35rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.product__imgslider > img{
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__img > img{
+    width: 100%;
+    height: 35rem;
+}
+
+
+.product__img > .img__fotoslider{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__img > .img__fotoslider > img{
+    width: 13rem;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 0.2rem solid #eae5e5;
+    transition: .1s;
+    object-fit: cover;
+}
+.product__img > .img__fotoslider > .active{
+    border: 0.2rem solid #0090e3;
+}
+
+.product__img > section.img__fotoslider > img.active:hover {
+    border: 0.2rem solid #0090e3;
+}
+
+.product__img > .img__fotoslider > img:hover{
+    border: 0.2rem solid #cdc5c5;
+}
+
+.product__informatie{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 8rem;
+}
+
+.product__informatieTekst{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.product__informatie h2{
+    color: #100E0E;
+    font-size: 2rem;
+}
+
+.product__informatie h3{
+    color: #c5bcbc;
+    font-size: 1.8rem;
+    border-bottom: 0.2rem solid #e4dbdb;
+    width:27.4rem;
+    padding-bottom: .5rem;
+}
+
+.product__informatie p{
+    color: #c5bcbc;
+    font-size: 1rem;
+}
+
+.variatie{
+    height: 4rem;
+    width: 30%;
+    border-radius: .5rem;
+    border: none;
+    border: 0.2rem solid #eae5e5;
+    transition: .1s;
+    background: white;
+    overflow: hidden;
+}
+
+.variatie:hover{
+    border: 0.2rem solid #cdc5c5;
+}
+.variatie > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product__informatie > div > .actiev{
+    border: 0.2rem solid #0090e3;
+}
+
+.product__informatie > div > .actiev:hover{
+    border: 0.2rem solid #0090e3;
+}
+.brijs{
+    color: #0090e3 !important;
+    border: none !important;
+    font-size: 2rem !important;
+}
+.product__informatie > div{
+    display: flex;
+    justify-content: space-between;
+}
+.add_to_cart{
+    height: 4rem;
+    width: 80%;
+    border-radius: .5rem;
+    border: none;
+    background: rgb(0, 170, 0);
+    box-shadow: 0 2px 0 0 #090;
+    cursor: pointer;
+    color: white;
+    transition: .2s;
+}
+
+.add_to_cart:hover{
+    background: rgb(0, 130, 0);
+    box-shadow: 0 2.5px 0 0 rgb(0, 100, 0);
+}
+
+.like{
+    height: 4rem;
+    width: 15%;
+    border-radius: .5rem;
+    border: none;
+    background: white;
+    cursor: pointer;
+    color: white;
+    border: 0.05rem solid #28a4ec;
+    box-shadow: 0 1px 0 0 #28a4ec;
+    transition: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like:hover{
+    border: 0.05rem solid #0780c7;
+    box-shadow: 0 1.5px 0 0 #0780c7;
+}
+
+.product__titelAchtergrond{
+    position:absolute;
+    color: #c5bcbc !important;
+    font-size: 65px !important;
+    opacity: .2;
+    top: 7rem;
+    right: -3rem;
+}
+
+.likeIcon{
+    color: #0090e3;
+    font-weight: 1000;
+}
